@@ -1,0 +1,271 @@
+.slider {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  /* Add margin to avoid overlapping with footer */
+  margin-bottom: 80px;
+}
+
+.slides {
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.slides-mobile {
+  display: none
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.slide .cta-btn {
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  background-color: white;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  padding: 12px 24px;
+  cursor: pointer;
+  text-align: center;
+  flex-shrink: 1;
+}
+
+.cta-btn:hover {
+  opacity: 0.8;
+}
+
+.cta-btn a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Position the tagline */
+.tagline-desktop {
+  position: absolute;
+  top: 80%;
+  left: 40%;
+  display: block;
+  margin-top: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  text-shadow: 2px 2px #222222;
+}
+
+.tagline-desktop a {
+  text-decoration: none;
+  color: white;
+}
+
+.slide-mobile:hover {
+  cursor: pointer;
+}
+
+/* CSS for manual navigation */
+.navigation-manual {
+  position: absolute;
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  background-color: darkgray;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Spacing between manual nav buttons */
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background-color: #222222;
+}
+
+.manual-btn:focus {
+  background-color: black;
+}
+
+#radio1:checked~.first {
+  margin-left: 0;
+}
+
+#radio2:checked~.first {
+  margin-left: -20%;
+}
+
+#radio3:checked~.first {
+  margin-left: -40%;
+}
+
+#radio4:checked~.first {
+  margin-left: -60%;
+}
+
+/* Carousel media query */
+@media all and (max-width: 768px) {
+  .slides {
+    display: none;
+    /* Hide the regular slides in mobile view */
+  }
+
+  .slides-mobile {
+    width: 500%;
+    height: 60vh;
+    display: flex;
+  }
+
+  .slide-mobile {
+    width: 20%;
+    height: 60vh;
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .slide-mobile img {
+    width: 100%;
+    height: 60vh;
+    object-fit: contain;
+  }
+
+  .cta-btn,
+  .tagline-mobile {
+    display: block;
+    position: absolute;
+    /* Position them absolutely within the slide container */
+  }
+
+  .cta-btn {
+    bottom: 15%;
+    /* Adjust the position from the bottom */
+    left: 50%;
+    /* Center them horizontally */
+    transform: translateX(-50%);
+    /* Adjust to center them perfectly */
+    background-color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    padding: 12px 24px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .tagline-mobile {
+    width: 50%;
+    height: 5%;
+    padding: 0;
+    margin-bottom: 30px;
+    bottom: 25%;
+    /* Adjust the position from the bottom */
+    left: 25%;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 2px 2px #222222;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    text-align: center;
+  }
+
+  .cta-btn:hover {
+    opacity: 0.8;
+  }
+
+  .cta-btn a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .tagline-mobile a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .slide-mobile:hover {
+    cursor: pointer;
+  }
+
+  /* CSS for manual navigation */
+  .navigation-manual {
+    position: absolute;
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .manual-btn {
+    background-color: darkgray;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  /* Spacing between manual nav buttons */
+  .manual-btn:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .manual-btn:hover {
+    background-color: #222222;
+  }
+
+  .manual-btn:focus {
+    background-color: black;
+  }
+
+  .slides-mobile input {
+    display: none;
+  }
+
+  #radio1:checked~.first {
+    margin-left: 0;
+  }
+
+  #radio2:checked~.first {
+    margin-left: -20%;
+  }
+
+  #radio3:checked~.first {
+    margin-left: -40%;
+  }
+
+  #radio4:checked~.first {
+    margin-left: -60%;
+  }
+
+
+}

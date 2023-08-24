@@ -1,0 +1,227 @@
+.header2 {
+  background-color: #ffffff;
+  text-align: center;
+  margin: 0px;
+  font-size: 15px;
+  color: #595959;
+  width: 100vw;
+  height: 10%;
+  line-height: 40px;
+  overflow-wrap: wrap;
+  word-wrap: wrap;
+}
+
+.header2 a:hover {
+  text-decoration: underline;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.banner-item {
+  width: 100vw;
+  max-height: 70vh;
+  text-align: center;
+  line-height: 50px;
+  background-color: #fafafa;
+  margin: 5px -10px;
+  padding: 50px;
+}
+
+.banner1 {
+  margin-top: 0px;
+}
+
+.banner3 {
+  background-color: #000000;
+  color: #FAFAFA;
+  line-height: 50px;
+}
+
+.banner a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #0066CC;
+}
+
+.banner-cta a:after,
+.tile-cta a:after {
+  display: inline-block;
+  -webkit-transform: scale(0.6, 1);
+  /* Safari and Chrome */
+  -moz-transform: scale(0.6, 1);
+  /* Firefox */
+  -ms-transform: scale(0.5, 1);
+  /* IE 9 */
+  -o-transform: scale(0.5, 1);
+  /* Opera */
+  transform: scale(0.5, 1);
+  /* W3C */
+  content: ">";
+  position: relative;
+  margin-left: 2px;
+  margin-right: 10px;
+}
+
+/*Hover style for Learn More and Buy links*/
+.banner-cta a:hover,
+.tile-cta a:hover {
+  text-decoration: underline;
+}
+
+/* Enable images to resize with screen */
+.banner-item img {
+  max-width: 100%;
+  max-height: 400px;
+}
+
+/* Hide mobile view images */
+.banner-img-mobile,
+.banner-img-mobile3 {
+  display: none;
+}
+
+/* Reduce font weight for subheaders in banners*/
+.banner h2 {
+  font-weight: 500;
+}
+
+/*  Tile design starts */
+
+/* Set tiles in their respective rows */
+.row1,
+.row2,
+.row3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* Set tiles to left and right columns */
+.flex-left {
+  height: 500px;
+  width: 49.5%;
+  text-align: center;
+  padding: 20px;
+}
+
+.flex-right {
+  height: 500px;
+  width: 49.5%;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Reduce font weight for subheaders in tiles*/
+.tile h3 {
+  font-weight: 500;
+}
+
+.tile-item {
+  line-height: 50px;
+}
+
+.tile-item a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #0066CC;
+}
+
+.tile-img {
+  max-width: 100%;
+  max-height: 300px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.tile-img5 {
+  max-width: 100%;
+  max-height: 300px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Bg color for all six tiles */
+.tile1 {
+  background-color: #FAFAFA;
+}
+
+.tile2 {
+  color: white;
+  background-color: #000000;
+}
+
+.tile3 {
+  color: white;
+  background: radial-gradient(circle farthest-side, #1C0120, #000000);
+}
+
+.tile4,
+.tile5 {
+  background-color: #FBFBFB;
+}
+
+.tile6 {
+  background-color: #F5F5F7;
+}
+
+/* Insert space between tiles and footer */
+.tile6,
+.tile6 {
+  margin-bottom: 20px;
+}
+
+/*  Tile design ends */
+
+/* Media query starts */
+@media all and (max-width: 768px) {
+
+  /* Hide specific images in mobile view */
+  .banner1 .banner-img img,
+  .banner3 .banner-img img {
+    display: none;
+  }
+
+  /* Style for mobile banner images */
+  .banner-img-mobile,
+  .banner-img-mobile3 {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 30px;
+  }
+
+  .banner {
+    margin-top: 40px;
+  }
+
+  /* Adjust tile-item styling for mobile view */
+  .tile-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .tile-img,
+  .tile-img5 {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Media query ends */
