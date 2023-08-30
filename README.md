@@ -1,6 +1,9 @@
 # apple-malaysia
+
 Study Buddy Team project: cloning Apple Malaysia website (Joanne, Che Rui, Valerie)
+
 Eraser link: https://app.eraser.io/workspace/0Ok0dPHP9536B4bHhrHM 
+
 GitHub deployed link: https://crchew.github.io/apple-malaysia-clone/
 
 PROJECT BREAKDOWN: -
