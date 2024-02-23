@@ -159,6 +159,10 @@
   .last__container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    margin-top: 25px;
   }
 
   .container__end {
@@ -210,17 +214,5 @@
     width: 0.5px;
     color: var(--secondary-grey);
     font-size: var(--small-font);
-  }
-
-  .malaysia>a {
-    margin-left: 1070px;
-    margin-right: 40px;
-    color: var(--quaternary-grey);
-    text-decoration: none;
-    font-size: var(--small-font);
-  }
-
-  .malaysia>a:hover {
-    text-decoration: underline;
   }
 }
