@@ -1,3 +1,5 @@
+/* Footer CSS on mobile */
+
 :root {
   --primary-black: rgb(29, 29, 31);
   /*done*/
@@ -86,61 +88,7 @@ html {
     flex-direction: column;
   }
 
-  .column__section1 {
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .column__section2 {
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .column__section3 {
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .column__section4 {
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .column__section5 {
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .column__section6 {
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .column__section7 {
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .column__section8 {
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .column__section9 {
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .column__section10 {
+  .column__section {
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
@@ -185,8 +133,6 @@ html {
     margin-top: -6px;
     margin-bottom: -6px;
   }
-
-  /**/
 
   .label {
     cursor: pointer;
@@ -403,8 +349,30 @@ html {
     display: none;
   }
 
+  .last__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .copyright {
+    /* white-space: nowrap;
+    color: var(--quinary-grey);
+    font-size: var(--small-font);
+    margin-left: 0px; */
+    padding: 20px;
+  }
+  
+  .container__end{
+    display: flex;
+    flex-direction: row;
+    white-space: normal;
+    margin-top: -14px;
+    margin: 30px;
+  }
 
-  .malaysia>a {
+  .region>a {
     margin-left: 40px;
     margin-right: 20px;
     color: var(--quaternary-grey);
@@ -413,23 +381,9 @@ html {
     list-style-type: none;
   }
 
-  .malaysia>a:hover {
+  .region>a:hover {
     text-decoration: underline;
     list-style-type: none;
-  }
-
-  .copyright {
-    white-space: nowrap;
-    color: var(--quinary-grey);
-    font-size: var(--small-font);
-    margin-left: 0px;
-  }
-
-  .container__end {
-    display: flex;
-    flex-direction: row;
-    white-space: normal;
-    margin-top: -14px;
   }
 
   .footer__end>a {
